@@ -60,23 +60,24 @@
 .card__botoes {
     display: flex;
     justify-content: space-between;
-    }
+}
 
 .botoes {
     display: flex;
 }
 
-.botoes__item  {
+.botoes__item {
     margin: 0 0.5em;
 }
+
 .botoes__ancora {
     background-color: var(--laranja);
     padding: 1em 2.2em;
     text-decoration: none;
     font-weight: 700;
     color: var(--branco);
-    
-} 
+
+}
 
 .descricao__avaliacao {
     margin: 0.5em 0;
@@ -86,25 +87,59 @@
     .carrossel__titulo {
         font-size: 26px;
     }
-    
+
     .swiper-pagination {
         margin: 2em 0 3em 0;
     }
 
     .swiper {
-        width: 75%;
+        width: 60%;
     }
 
     .swiper-button-prev,
     .swiper-button-next {
         display: block;
-        top: 60%;
+        top: 40%;
+    }
+
+    .card {
+        width: 40%;
+        margin: 2em auto;
+
+    }
+
+}
+
+@media screen and (min-width: 1728px) {
+    .descricao__titulo {
+        font-size: 32px;
+    }
+
+    .descricao__texto {
+        font-size: 16px;
+    }
+
+    .carrossel__container {
+        display: flex;
+        margin: 0 20vw 3em 20vw;
+        align-items: center;
+    }
+
+    .swiper-pagination {
+        margin: 1em 0;
+    }
+
+    .swiper {
+        width: 50%;
     }
 
     .card {
         width: 60%;
-        margin: 2em auto;
-        
+        margin-left: 3em;
     }
-    
+
+    .descricao {
+        margin-right: 2em;
+    }
+
 }
